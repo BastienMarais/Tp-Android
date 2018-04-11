@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:baselineAligned="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".exo4">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/blabla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N\'appuie pas sur ce bouton !"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="219dp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Texte" />
+
+        <Button
+            android:id="@+id/invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taille"
+            android:visibility="invisible" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".exo3">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="166dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey">
+
+
+        <TableRow android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="Panel de connexion"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="155dp"
+                android:text=" Login :"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/login"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="179dp"
+                android:inputType="text"
+                android:textColor="@color/white" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="173dp"
+                android:text=" Password :"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="179dp"
+                android:inputType="textPassword"
+                android:textColor="@color/white" />
+
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/annuler"
+                style="@android:style/Widget.Button.Inset"
+                android:text="Annuler" />
+
+            <Button
+                android:id="@+id/valider"
+                style="@android:style/Widget.Button.Inset"
+                android:text="Valider" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
